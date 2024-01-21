@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Resetting default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Styling for the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.container {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+
+
+/* Styling for the navigation bar */
+nav {
+    background-color: #444;
+    padding: 10px ;
+    justify-content: center;
+
+}
+
+/* Styling for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+/* Styling for product price */
+.product-price {
+    font-size: 20px;
+    color: #e62a2a;
+    margin-bottom: 20px;
+}
+/* Container to center content on the page */
+.card {
+    width: min-content;
+    padding: 20px;
+    margin: 0 20px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+    transition: .4s ease;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card .card-image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    padding: 0 20px;
+    text-align: center;
+    background: #3ab9e4;
+    border-radius: 12px;
+}
+
+.card .card-image img {
+    width: 100%;
+    transition: .4s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.02)
+               rotate(-3deg)
+               translateX(-5px);
+}
+
+
+
+.card .card-content h3 {
+    color: #222;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card .card-content p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0 22px;
+    text-align: justify;
+}
+
+.card .card-content button {
+    background-color: #52be27;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+}
+
+.card .card-content button:hover{
+    background-color: #333;
+
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1280px) {
+    body {
+        height: unset;
+        padding: 30px 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .card {
+        margin: 20px;
+    }
+}
